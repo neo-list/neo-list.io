@@ -1,0 +1,49 @@
+{{#each this}}
+  {{#equal this.status "Ended"}}
+  <li id="project-line" class="list-line w-clearfix">
+    <div class="col gap"></div>
+    <div class="col-info project w-clearfix">
+      <div class="r1 w-row">
+        <div class="col1 w-col w-col-5"><a href=".{{this.link}}" id="project-imglink" class="w-inline-block"><img src="images/nex-logo.png" width="46" id="project-image" class="project-image"></a></div>
+        <div class="column-11 w-col w-col-7">
+          <div class="div-block-4">
+            <div id="project-name" class="project-name"><a id="project-textlink" href=".{{this.link}}" class="detail-link">{{this.name}}</a></div>
+          </div>
+          <div id="project-category" class="project-category">{{this.category}}</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-info rating">
+      <div id="project-rating" class="rating-green"></div>
+    </div>
+    <div class="col-info guidelines">
+      <div id="project-guidelines">{{this.guidelines}}</div>
+    </div>
+    <div class="col-info presale">
+      <div id="project-presale">{{this.presale}}</div>
+    </div>
+    <div class="col-info crowdsale">
+      <div id="project-crowdsale">{{this.crowdsale}}</div>
+    </div>
+    <div class="col-info goal">
+      <div id="project-goal">{{this.goal}}</div>
+    </div>
+    <div class="col info">
+      <div class="images-row links w-row">
+        <div class="images-col w-col w-col-3"><img src="images/neolist-kyc.svg" width="14" id="project-kyc" tooltipster="top" title={{this.infokyc}} class="info-true" ></div>
+        <div class="images-col w-col w-col-3"><img src="images/neolist-whitelist.svg" id="project-whitelist" tooltipster="top" title={{this.infowhitelist}} class="info-true"></div>
+        <div class="images-col w-col w-col-3"><img src="images/neolist-location.svg" id="project-location" tooltipster="top" title={{this.infolocations}} class="info-true"></div>
+        <div class="images-col w-col w-col-3"><img src="images/neolist-bonus.svg" id="project-bonus" tooltipster="top" title={{this.infobonus}} class="info-true"></div>
+      </div>
+    </div>
+    <div class="col links">
+      <div class="images-row w-row">
+        <div class="images-col website w-col w-col-3"><a href="{{this.linkswebsite}}" id="website-link" target="_blank" class="w-inline-block"><img src="images/neolist-website.svg" id="project-website" class="info-true"></a></div>
+        <div class="images-col w-col w-col-3"><a href="{{this.linkswhitepaper}}" id="whitepaper-link" target="_blank" class="w-inline-block"><img src="images/neolist-whitepaper.svg" width="14" id="project-whitepaper" class="info-true"></a></div>
+        <div class="images-col w-col w-col-3"></div>
+        <div class="images-col w-col w-col-3"></div>
+      </div>
+    </div>
+    </li>
+  {{/equal}}
+{{/each}}
