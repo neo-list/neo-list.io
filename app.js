@@ -7,6 +7,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var logger = require('morgan');
 
+
 //NEO LIST
 var mongo = require('mongodb');
 var monk = require('monk');
@@ -67,7 +68,7 @@ app.use(function(err, req, res, next) {
 // NEO LIST getting sheets JSON
 function getNeoListJSON() {
   request({
-    url: 'SHEET API HERE',
+    url: 'SHEETS API HERE',
     json: true
   }, function (error, response, body) {
     if (!error && response.statusCode === 200) {
