@@ -193,9 +193,9 @@
   float: left;
   font-family: Quicksand, sans-serif;
   color: #58bf00;
-  font-size: 15px;
   text-decoration: none;
   text-transform: none;
+  width: 150%;
 }
 
 .credit-name:hover {
@@ -1258,6 +1258,7 @@
 
 .brew-img.footer {
   max-width: 10px;
+  padding-bottom: 28px;
 }
 
 .brew-img.footer.brew {
@@ -1417,7 +1418,7 @@
     align-items: flex-start;
   }
   .credit-right.footer {
-    left: -25px;
+    left: -55px;
   }
   .credit-right.footer._2 {
     left: -45px;
@@ -1703,4 +1704,3 @@
     margin-bottom: 1px;
   }
 }
-
