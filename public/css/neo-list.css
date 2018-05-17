@@ -190,12 +190,12 @@
 }
 
 .credit-name {
+  width: 150%;
   float: left;
   font-family: Quicksand, sans-serif;
   color: #58bf00;
   text-decoration: none;
   text-transform: none;
-  width: 150%;
 }
 
 .credit-name:hover {
@@ -1208,10 +1208,7 @@
 
 .loading {
   position: fixed;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   width: 100vw;
   height: 100vh;
   -webkit-box-pack: center;
@@ -1258,7 +1255,6 @@
 
 .brew-img.footer {
   max-width: 10px;
-  padding-bottom: 28px;
 }
 
 .brew-img.footer.brew {
@@ -1313,6 +1309,29 @@
 .ended.w--current {
   background-color: hsla(0, 0%, 100%, .05);
   color: #fff;
+}
+
+.pr-heading {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.pr-heading.privacy {
+  margin-bottom: 30px;
+}
+
+.se-heading {
+  margin-bottom: 4px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.h-link {
+  color: #58bf00;
+}
+
+.text-bounds {
+  margin-bottom: 40px;
 }
 
 @media (max-width: 991px) {
@@ -1418,10 +1437,10 @@
     align-items: flex-start;
   }
   .credit-right.footer {
-    left: -60px;
+    left: -55px;
   }
   .credit-right.footer._2 {
-    left: -45px;
+    left: -60px;
   }
   .body-section {
     margin-right: 30px;
