@@ -7,9 +7,25 @@ router.get('/', function(req, res, next) {
   res.sendFile(path.resolve(__dirname+'/../views/neolist.html'));
 });
 
-/* GET add coin page. */
-router.get('/addcoin', function(req, res, next) {
-  res.sendFile(path.resolve(__dirname+'/../views/addcoin.html'));
+router.get('/add', function(req, res, next) {
+  res.sendFile(path.resolve(__dirname+'/../views/add.html'));
+});
+
+
+router.get('/privacy-policy', function(req, res, next) {
+  res.sendFile(path.resolve(__dirname+'/../views/privacy-policy.html'));
+});
+
+router.get('/terms', function(req, res, next) {
+  res.sendFile(path.resolve(__dirname+'/../views/terms.html'));
+});
+
+router.get('/report', function(req, res, next) {
+  res.sendFile(path.resolve(__dirname+'/../views/report.html'));
+});
+
+router.get('/request', function(req, res, next) {
+  res.sendFile(path.resolve(__dirname+'/../views/request.html'));
 });
 
 /* GET project page. */
@@ -17,10 +33,13 @@ router.get('/:name', function(req, res, next) {
 	var db = req.db;
   var collection = db.get('coinlist');
   collection.findOne({link: '/' + req.params.name},{},function(e,docs){
+      console.log(docs);
       if (docs == null) {
       	res.sendFile(path.resolve(__dirname+'/../views/404.html'));
       }
-      res.sendFile(path.resolve(__dirname+'/../views/project-detail.html'));
+      else{
+        res.sendFile(path.resolve(__dirname+'/../views/project-detail.html'));
+      }
   });
   
 });

@@ -68,7 +68,7 @@ app.use(function(err, req, res, next) {
 // NEO LIST getting sheets JSON
 function getNeoListJSON() {
   request({
-    url: 'SHEETS API HERE',
+    url: 'http://gsx2json.com/api?id=1S2qUQ8Ft-4OoHodMbHuGZc00McYILC8R4ND5Blzo2a8',
     json: true
   }, function (error, response, body) {
     if (!error && response.statusCode === 200) {
@@ -96,3 +96,6 @@ setInterval(function () {
 
 module.exports = app;
 
+
+
+// mongod --dbpath M:\Test\websockettut\socketio\data
