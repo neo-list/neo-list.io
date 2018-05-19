@@ -738,6 +738,10 @@
   margin-top: 25px;
 }
 
+ul{
+  padding-left: 0px !important;
+}
+
 .project-category {
   overflow: auto;
   width: 204.375px;
