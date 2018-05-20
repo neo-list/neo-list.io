@@ -96,6 +96,8 @@ setInterval(function () {
 
 module.exports = app;
 
-
+// handlebars active.handlebars -f active.tmpl.js
+// handlebars upcoming.handlebars -f upcoming.tmpl.js
+// handlebars ended.handlebars -f ended.tmpl.js
 
 // mongod --dbpath M:\Test\websockettut\socketio\data

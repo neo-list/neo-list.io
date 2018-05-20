@@ -23,13 +23,21 @@ templates['ended'] = template({"1":function(container,depth0,helpers,partials,da
     + alias2(alias1((depth0 != null ? depth0.crowdsale : depth0), depth0))
     + "</div>\r\n    </div>\r\n    <div class=\"col-info goal\">\r\n      <div id=\"project-goal\">"
     + alias2(alias1((depth0 != null ? depth0.goal : depth0), depth0))
-    + "</div>\r\n    </div>\r\n    <div class=\"col info\">\r\n      <div class=\"images-row links w-row\">\r\n        <div class=\"images-col w-col w-col-3\"><img src=\"images/neolist-kyc.svg\" width=\"14\" id=\"project-kyc\" tooltipster=\"top\" title="
+    + "</div>\r\n    </div>\r\n    <div class=\"col info\">\r\n      <div class=\"images-row links w-row\">\r\n        <div class=\"images-col w-col w-col-3\"><img src=\"images/neolist-kyc.svg\" width=\"14\" id=\""
+    + alias2(alias1((depth0 != null ? depth0["project-id"] : depth0), depth0))
+    + "project-kyc\" tooltipster=\"top\" title="
     + alias2(alias1((depth0 != null ? depth0.infokyc : depth0), depth0))
-    + " class=\"info-true\" ></div>\r\n        <div class=\"images-col w-col w-col-3\"><img src=\"images/neolist-whitelist.svg\" id=\"project-whitelist\" tooltipster=\"top\" title="
+    + " class=\"info-true\" ></div>\r\n        <div class=\"images-col w-col w-col-3\"><img src=\"images/neolist-whitelist.svg\" id=\""
+    + alias2(alias1((depth0 != null ? depth0["project-id"] : depth0), depth0))
+    + "project-whitelist\" tooltipster=\"top\" title="
     + alias2(alias1((depth0 != null ? depth0.infowhitelist : depth0), depth0))
-    + " class=\"info-true\"></div>\r\n        <div class=\"images-col w-col w-col-3\"><img src=\"images/neolist-location.svg\" id=\"project-location\" tooltipster=\"top\" title="
+    + " class=\"info-true\"></div>\r\n        <div class=\"images-col w-col w-col-3\"><img src=\"images/neolist-location.svg\" id=\""
+    + alias2(alias1((depth0 != null ? depth0["project-id"] : depth0), depth0))
+    + "project-location\" tooltipster=\"top\" title="
     + alias2(alias1((depth0 != null ? depth0.infolocations : depth0), depth0))
-    + " class=\"info-true\"></div>\r\n        <div class=\"images-col w-col w-col-3\"><img src=\"images/neolist-bonus.svg\" id=\"project-bonus\" tooltipster=\"top\" title="
+    + " class=\"info-true\"></div>\r\n        <div class=\"images-col w-col w-col-3\"><img src=\"images/neolist-bonus.svg\" id=\""
+    + alias2(alias1((depth0 != null ? depth0["project-id"] : depth0), depth0))
+    + "project-bonus\" tooltipster=\"top\" title="
     + alias2(alias1((depth0 != null ? depth0.infobonus : depth0), depth0))
     + " class=\"info-true\"></div>\r\n      </div>\r\n    </div>\r\n    <div class=\"col links\">\r\n      <div class=\"images-row w-row\">\r\n        <div class=\"images-col website w-col w-col-3\"><a href=\""
     + alias2(alias1((depth0 != null ? depth0.linkswebsite : depth0), depth0))
