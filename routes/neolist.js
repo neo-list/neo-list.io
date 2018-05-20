@@ -33,7 +33,6 @@ router.get('/:name', function(req, res, next) {
 	var db = req.db;
   var collection = db.get('coinlist');
   collection.findOne({link: '/' + req.params.name},{},function(e,docs){
-      console.log(docs);
       if (docs == null) {
       	res.sendFile(path.resolve(__dirname+'/../views/404.html'));
       }
