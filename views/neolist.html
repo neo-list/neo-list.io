@@ -236,6 +236,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 getData();
 
+function getTooltips(){
+    $.getScript("https://cdn.rawgit.com/iamceege/tooltipster/master/dist/js/tooltipster.bundle.min.js", function( data, textStatus, jqxhr ) {
+        $.getScript("https://cdn.rawgit.com/maciejsaw/tooltipster-for-webflow/master/tooltipster-for-webflow.js");
+    });
+}
+
 function getData() {
 
   // jQuery AJAX call for JSON
@@ -253,9 +259,7 @@ function getData() {
     var template = Handlebars.templates['ended'];
     $("#ended-list").html(template(data));
 
-    $.getScript("https://cdn.rawgit.com/iamceege/tooltipster/master/dist/js/tooltipster.bundle.min.js", function( data, textStatus, jqxhr ) {
-      $.getScript("https://cdn.rawgit.com/maciejsaw/tooltipster-for-webflow/master/tooltipster-for-webflow.js");
-    });
+    getTooltips();
   });
 };
 </script>
