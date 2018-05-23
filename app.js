@@ -84,6 +84,7 @@ function getNeoListJSON() {
           //store time objects for sorting
           //upcoming
           body.rows[i]['crowdsaleperoid-start-obj'] = chrono.parseDate(body.rows[i]['crowdsaleperoid-start']);
+          console.log(body.rows[i]['crowdsaleperoid-start-obj']);
           //active and ended
           body.rows[i]['crowdsaleperoid-end-obj'] = chrono.parseDate(body.rows[i]['crowdsaleperoid-end']);
           collection.insert(body.rows[i]);

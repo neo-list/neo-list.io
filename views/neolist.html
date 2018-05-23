@@ -242,26 +242,41 @@ function getTooltips(){
     });
 }
 
+function applyTemplate(status, data){
+    var template = Handlebars.templates[status];
+    $("#"+status+"-list").html(template(data));
+}
+
+function sortByDate(status, data, applyTemplate){
+  data.sort(function(a,b){
+    return new Date(b['crowdsaleperoid-end-obj']) - new Date(a['crowdsaleperoid-end-obj']);
+  });
+  if(status === "ended"){
+    applyTemplate(status, data.reverse());
+  }
+  else{
+    applyTemplate(status, data); 
+  }
+  
+}
+
 function getData() {
 
   // jQuery AJAX call for JSON
-  $.getJSON( 'coins/coinlist', function( data ) {
+  $.getJSON('coins/coinlist', function( data ) {
     // Stick our coin data array into a coinlist variable in the global object --- should add paging?
-    coinListData = data;
-    console.log(data);
+    data = data.sort(() => Math.random() - 0.5)
+    
+    sortByDate('active', data, applyTemplate)
 
-    var template = Handlebars.templates['active'];
-    $("#active-list").html(template(data));
+    sortByDate('upcoming', data, applyTemplate)
 
-    var template = Handlebars.templates['upcoming'];
-    $("#upcoming-list").html(template(data));
-
-    var template = Handlebars.templates['ended'];
-    $("#ended-list").html(template(data));
+    sortByDate('ended', data, applyTemplate)
 
     getTooltips();
   });
 };
+
 </script>
 
 <!-- <script src="https://cdn.rawgit.com/iamceege/tooltipster/master/dist/js/tooltipster.bundle.min.js"></script><script src="https://cdn.rawgit.com/maciejsaw/tooltipster-for-webflow/master/tooltipster-for-webflow.js"></script>
