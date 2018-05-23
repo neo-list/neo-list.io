@@ -7,8 +7,6 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var logger = require('morgan');
 
-
-//NEO LIST
 var mongo = require('mongodb');
 var monk = require('monk');
 var db = monk('localhost:27017/coinlist');
@@ -16,6 +14,7 @@ var coins = require('./routes/coins');
 var neolist = require('./routes/neolist');
 var handlebars = require('handlebars'),
   fs = require('fs');
+var chrono = require('chrono-node')
 
 var app = express();
 var port = 3002;
@@ -82,6 +81,11 @@ function getNeoListJSON() {
           catch(err){
             // console.log(err);
           }
+          //store time objects for sorting
+          //upcoming
+          body.rows[i]['crowdsaleperoid-start-obj'] = chrono.parseDate(body.rows[i]['crowdsaleperoid-start']);
+          //active and ended
+          body.rows[i]['crowdsaleperoid-end-obj'] = chrono.parseDate(body.rows[i]['crowdsaleperoid-end']);
           collection.insert(body.rows[i]);
         };
     }
@@ -96,8 +100,3 @@ setInterval(function () {
 
 module.exports = app;
 
-// handlebars active.handlebars -f active.tmpl.js
-// handlebars upcoming.handlebars -f upcoming.tmpl.js
-// handlebars ended.handlebars -f ended.tmpl.js
-
-// mongod --dbpath M:\Test\websockettut\socketio\data
