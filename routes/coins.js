@@ -24,7 +24,6 @@ router.post('/addcoin', function(req, res) {
         );
     });
 });
-module.exports = router;
 
 /*
  * DELETE to deletecoin.
@@ -38,3 +37,4 @@ router.delete('/deletecoin/:id', function(req, res) {
     });
 });
 
+module.exports = router;
