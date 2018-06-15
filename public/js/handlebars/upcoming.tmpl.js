@@ -39,11 +39,11 @@ templates['upcoming'] = template({"1":function(container,depth0,helpers,partials
     + alias2(alias1((depth0 != null ? depth0["project-id"] : depth0), depth0))
     + "project-bonus\" tooltipster=\"top\" title=\""
     + alias2(alias1((depth0 != null ? depth0.infobonus : depth0), depth0))
-    + "\" class=\"info-true\"></div>\r\n      </div>\r\n    </div>\r\n    <div class=\"col links\">\r\n      <div class=\"images-row w-row\">\r\n        <div class=\"images-col website w-col w-col-3\"><a href=\""
+    + "\" class=\"info-true\"></div>\r\n      </div>\r\n    </div>\r\n    <div class=\"col links\">\r\n      <div class=\"images-row w-row\">\r\n        <div class=\"images-col website w-col w-col-3\"><a href="
     + alias2(alias1((depth0 != null ? depth0.linkswebsite : depth0), depth0))
-    + "\" id=\"website-link\" target=\"_blank\" class=\"w-inline-block\"><img src=\"images/neolist-website.svg\" id=\"project-website\" class=\"info-true\"></a></div>\r\n        <div class=\"images-col w-col w-col-3\"><a href=\""
+    + " id=\"website-link\" target=\"_blank\" class=\"w-inline-block\"><img src=\"images/neolist-website.svg\" id=\"project-website\" class=\"info-true\"></a></div>\r\n        <div class=\"images-col w-col w-col-3\"><a href="
     + alias2(alias1((depth0 != null ? depth0.linkswhitepaper : depth0), depth0))
-    + "\" id=\"whitepaper-link\" target=\"_blank\" class=\"w-inline-block\"><img src=\"images/neolist-whitepaper.svg\" width=\"14\" id=\"project-whitepaper\" class=\"info-true\"></a></div>\r\n        <div class=\"images-col w-col w-col-3\"></div>\r\n        <div class=\"images-col w-col w-col-3\"></div>\r\n      </div>\r\n    </div>\r\n    </li>\r\n";
+    + " id=\"whitepaper-link\" target=\"_blank\" class=\"w-inline-block\"><img src=\"images/neolist-whitepaper.svg\" width=\"14\" id=\"project-whitepaper\" class=\"info-true\"></a></div>\r\n        <div class=\"images-col w-col w-col-3\"></div>\r\n        <div class=\"images-col w-col w-col-3\"></div>\r\n      </div>\r\n    </div>\r\n    </li>\r\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
