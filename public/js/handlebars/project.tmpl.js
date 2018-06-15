@@ -1,7 +1,55 @@
 (function() {
   var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
-templates['project'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+templates['project'] = template({"1":function(container,depth0,helpers,partials,data) {
     var helper, alias1=container.lambda, alias2=container.escapeExpression, alias3=depth0 != null ? depth0 : (container.nullContext || {}), alias4=helpers.helperMissing, alias5="function";
+
+  return "            <div class=\"project-col w-col w-col-6\">\r\n              <div class=\"project-col-heading\">\r\n                <div class=\"project-col-title\">Pre-Sale</div>\r\n              </div>\r\n              <div class=\"project-col-body\">\r\n                <p id=\"project-presale-peroid\"><span class=\"pre\">Period:</span> "
+    + alias2(alias1((depth0 != null ? depth0["presaleperoid-start"] : depth0), depth0))
+    + " - "
+    + alias2(alias1((depth0 != null ? depth0["presaleperoid-end"] : depth0), depth0))
+    + "</p>\r\n                <p id=\"project-presale-accepted\"><span class=\"pre\">Tokens Accepted:</span> "
+    + alias2(alias1((depth0 != null ? depth0.presaletokens : depth0), depth0))
+    + "</p>\r\n                <p id=\"project-presale-softcap\"><span class=\"pre\">Soft Cap:</span> "
+    + alias2(alias1((depth0 != null ? depth0["presalesoftcap-usd"] : depth0), depth0))
+    + " / "
+    + alias2(alias1((depth0 != null ? depth0["presalesoftcap-neo"] : depth0), depth0))
+    + "</p>\r\n                <p id=\"project-presale-hardcap\"><span class=\"pre\">Hard Cap:</span> "
+    + alias2(alias1((depth0 != null ? depth0["presalehardcap-usd"] : depth0), depth0))
+    + " / "
+    + alias2(((helper = (helper = helpers["presalehardcap-neo"] || (depth0 != null ? depth0["presalehardcap-neo"] : depth0)) != null ? helper : alias4),(typeof helper === alias5 ? helper.call(alias3,{"name":"presalehardcap-neo","hash":{},"data":data}) : helper)))
+    + "</p>\r\n                <p id=\"project-presale-totalsupply\"><span class=\"pre\">Total Supply:</span> "
+    + alias2(alias1((depth0 != null ? depth0["presaletotal-supply"] : depth0), depth0))
+    + "</p>\r\n                <p id=\"project-presale-offeredsupply\"><span class=\"pre\">Offered Supply:</span> "
+    + alias2(((helper = (helper = helpers["presaleoffered-supply"] || (depth0 != null ? depth0["presaleoffered-supply"] : depth0)) != null ? helper : alias4),(typeof helper === alias5 ? helper.call(alias3,{"name":"presaleoffered-supply","hash":{},"data":data}) : helper)))
+    + " ("
+    + alias2(alias1((depth0 != null ? depth0["presaleoffered-supply-percent"] : depth0), depth0))
+    + ")</p>\r\n              </div>\r\n            </div>\r\n";
+},"3":function(container,depth0,helpers,partials,data) {
+    var alias1=container.lambda, alias2=container.escapeExpression;
+
+  return "            <div class=\"project-col w-col w-col-6\">\r\n              <div class=\"project-col-heading\">\r\n                <div class=\"project-col-title\">Crowd-Sale</div>\r\n              </div>\r\n              <div class=\"project-col-body\">\r\n                <p id=\"project-crowdsale-peroid\"><span class=\"pre\">Period:</span> "
+    + alias2(alias1((depth0 != null ? depth0["crowdsaleperoid-start"] : depth0), depth0))
+    + " - "
+    + alias2(alias1((depth0 != null ? depth0["crowdsaleperoid-end"] : depth0), depth0))
+    + "</p>\r\n                <p id=\"project-crowdsale-accepted\"><span class=\"pre\">Tokens Accepted:</span> "
+    + alias2(alias1((depth0 != null ? depth0.crowdsaletokens : depth0), depth0))
+    + "</p>\r\n                <p id=\"project-crowdsale-softcap\"><span class=\"pre\">Soft Cap:</span> "
+    + alias2(alias1((depth0 != null ? depth0["crowdsalesoftcap-usd"] : depth0), depth0))
+    + " / "
+    + alias2(alias1((depth0 != null ? depth0["crowdsalesoftcap-neo"] : depth0), depth0))
+    + "</p>\r\n                <p id=\"project-crowdsale-hardcap\"><span class=\"pre\">Hard Cap:</span> "
+    + alias2(alias1((depth0 != null ? depth0["crowdsalehardcap-usd"] : depth0), depth0))
+    + " / "
+    + alias2(alias1((depth0 != null ? depth0["crowdsalehardcap-neo"] : depth0), depth0))
+    + "</p>\r\n                <p id=\"project-crowdsale-totalsupply\"><span class=\"pre\">Total Supply:</span> "
+    + alias2(alias1((depth0 != null ? depth0["crowdsaletotal-supply"] : depth0), depth0))
+    + "</p>\r\n                <p id=\"project-crowdsale-offeredsupply\"><span class=\"pre\">Offered Supply:</span> "
+    + alias2(alias1((depth0 != null ? depth0["crowdsaleoffered-supply"] : depth0), depth0))
+    + " ("
+    + alias2(alias1((depth0 != null ? depth0["crowdsaleoffered-supply-percent"] : depth0), depth0))
+    + ")</p>\r\n              </div>\r\n            </div>\r\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression, alias3=depth0 != null ? depth0 : (container.nullContext || {}), alias4=helpers.helperMissing;
 
   return "  <div data-w-id=\"0f3248ba-0e15-d0a9-4f99-7b44db590e67\" style=\"display:none\" class=\"load-box\">\r\n    <div class=\"header-section\">\r\n      <div class=\"header-container w-container\">\r\n        <div class=\"header-row w-row\">\r\n          <div class=\"header-left w-col w-col-6\"><a href=\"http://neolist.io\" class=\"w-inline-block\"><img src=\"images/neolist-tick.svg\" alt=\"Neo List Logo\" class=\"neo-list-logo-image\"></a>\r\n            <div class=\"neolist-text\"><span class=\"green\"></span><a href=\"http://neolist.io\" class=\"neo-list-logo\"><span xmlns=\"http://www.w3.org/1999/xhtml\" class=\"green\">NEO</span> LIST</a></div>\r\n          </div>\r\n          <div class=\"header-right w-col w-col-6\">\r\n            <div class=\"credit-row header w-row\">\r\n              <div class=\"credit-left w-clearfix w-col w-col-6\"><img src=\"images/neolist-bolt.svg\" class=\"bolt-img\"></div>\r\n              <div class=\"credit-right w-clearfix w-col w-col-6\">\r\n                <div class=\"credit-info\">Powered By</div><a href=\"https://twitter.com/ByteSizeCapital\" target=\"_blank\" class=\"credit-name\">@ByteSizeCapital</a></div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"body-section\">\r\n      <div class=\"body-container w-container\">\r\n        <div class=\"project-top w-clearfix\">\r\n          <div id=\"project-status\" class=\"project-stage\">"
     + alias2(alias1((depth0 != null ? depth0.status : depth0), depth0))
@@ -23,47 +71,10 @@ templates['project'] = template({"compiler":[7,">= 4.0.0"],"main":function(conta
     + alias2(alias1((depth0 != null ? depth0.infolocationslong : depth0), depth0))
     + "</p>\r\n              </div>\r\n            </div>\r\n            <div class=\"project-col w-col w-col-6\">\r\n              <div class=\"project-col-heading\">\r\n                <div class=\"project-col-title\">Bonuses</div>\r\n              </div>\r\n              <div class=\"project-col-body\">\r\n                <p id=\"project-bonusesinfo\">There is a 25% bonus for pre-sale participants</p>\r\n              </div>\r\n            </div>\r\n          </div>\r\n          <div class=\"w-row\">\r\n            <div class=\"project-col w-col w-col-6\">\r\n              <div class=\"project-col-heading\">\r\n                <div class=\"project-col-title\">Personal Cap</div>\r\n              </div>\r\n              <div class=\"project-col-body\">\r\n                <p id=\"project-capinfo\">There is a "
     + alias2(alias1((depth0 != null ? depth0["presalehardcap-neo"] : depth0), depth0))
-    + " NEO maximum cap for the pre-sale</p>\r\n              </div>\r\n            </div>\r\n            <div class=\"project-col w-col w-col-6\">\r\n              <div class=\"project-col-heading\">\r\n                <div class=\"project-col-title\">Token Issuance</div>\r\n              </div>\r\n              <div class=\"sub-text-false\">\r\n                <p id=\"project-issueinfo\">Information not yet available</p>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"project-heading\">\r\n          <div>\r\n            <div class=\"project-title\">Token Sale Information</div>\r\n          </div>\r\n        </div>\r\n        <div class=\"project-body\">\r\n          <div class=\"w-row\">\r\n            <div class=\"project-col w-col w-col-6\">\r\n              <div class=\"project-col-heading\">\r\n                <div class=\"project-col-title\">Pre-Sale</div>\r\n              </div>\r\n              <div class=\"project-col-body\">\r\n                <p id=\"project-presale-peroid\"><span class=\"pre\">Period:</span> "
-    + alias2(alias1((depth0 != null ? depth0["presaleperoid-start"] : depth0), depth0))
-    + " - "
-    + alias2(alias1((depth0 != null ? depth0["presaleperoid-end"] : depth0), depth0))
-    + "</p>\r\n                <p id=\"project-presale-accepted\"><span class=\"pre\">Tokens Accepted:</span> "
-    + alias2(alias1((depth0 != null ? depth0.presaletokens : depth0), depth0))
-    + "</p>\r\n                <p id=\"project-presale-softcap\"><span class=\"pre\">Soft Cap:</span> "
-    + alias2(alias1((depth0 != null ? depth0["presalesoftcap-usd"] : depth0), depth0))
-    + " / "
-    + alias2(alias1((depth0 != null ? depth0["presalesoftcap-neo"] : depth0), depth0))
-    + "</p>\r\n                <p id=\"project-presale-hardcap\"><span class=\"pre\">Hard Cap:</span> "
-    + alias2(alias1((depth0 != null ? depth0["presalehardcap-usd"] : depth0), depth0))
-    + " / "
-    + alias2(((helper = (helper = helpers["presalehardcap-neo"] || (depth0 != null ? depth0["presalehardcap-neo"] : depth0)) != null ? helper : alias4),(typeof helper === alias5 ? helper.call(alias3,{"name":"presalehardcap-neo","hash":{},"data":data}) : helper)))
-    + "</p>\r\n                <p id=\"project-presale-totalsupply\"><span class=\"pre\">Total Supply:</span> "
-    + alias2(alias1((depth0 != null ? depth0["presaletotal-supply"] : depth0), depth0))
-    + "</p>\r\n                <p id=\"project-presale-offeredsupply\"><span class=\"pre\">Offered Supply:</span> "
-    + alias2(((helper = (helper = helpers["presaleoffered-supply"] || (depth0 != null ? depth0["presaleoffered-supply"] : depth0)) != null ? helper : alias4),(typeof helper === alias5 ? helper.call(alias3,{"name":"presaleoffered-supply","hash":{},"data":data}) : helper)))
-    + " ("
-    + alias2(alias1((depth0 != null ? depth0["presaleoffered-supply-percent"] : depth0), depth0))
-    + ")</p>\r\n              </div>\r\n            </div>\r\n            <div class=\"project-col w-col w-col-6\">\r\n              <div class=\"project-col-heading\">\r\n                <div class=\"project-col-title\">Crowd-Sale</div>\r\n              </div>\r\n              <div class=\"project-col-body\">\r\n                <p id=\"project-crowdsale-peroid\"><span class=\"pre\">Period:</span> "
-    + alias2(alias1((depth0 != null ? depth0["crowdsaleperoid-start"] : depth0), depth0))
-    + " - "
-    + alias2(alias1((depth0 != null ? depth0["crowdsaleperoid-end"] : depth0), depth0))
-    + "</p>\r\n                <p id=\"project-crowdsale-accepted\"><span class=\"pre\">Tokens Accepted:</span> "
-    + alias2(alias1((depth0 != null ? depth0.crowdsaletokens : depth0), depth0))
-    + "</p>\r\n                <p id=\"project-crowdsale-softcap\"><span class=\"pre\">Soft Cap:</span> "
-    + alias2(alias1((depth0 != null ? depth0["crowdsalesoftcap-usd"] : depth0), depth0))
-    + " / "
-    + alias2(alias1((depth0 != null ? depth0["crowdsalesoftcap-neo"] : depth0), depth0))
-    + "</p>\r\n                <p id=\"project-crowdsale-hardcap\"><span class=\"pre\">Hard Cap:</span> "
-    + alias2(alias1((depth0 != null ? depth0["crowdsalehardcap-usd"] : depth0), depth0))
-    + " / "
-    + alias2(alias1((depth0 != null ? depth0["crowdsalehardcap-neo"] : depth0), depth0))
-    + "</p>\r\n                <p id=\"project-crowdsale-totalsupply\"><span class=\"pre\">Total Supply:</span> "
-    + alias2(alias1((depth0 != null ? depth0["crowdsaletotal-supply"] : depth0), depth0))
-    + "</p>\r\n                <p id=\"project-crowdsale-offeredsupply\"><span class=\"pre\">Offered Supply:</span> "
-    + alias2(alias1((depth0 != null ? depth0["crowdsaleoffered-supply"] : depth0), depth0))
-    + " ("
-    + alias2(alias1((depth0 != null ? depth0["crowdsaleoffered-supply-percent"] : depth0), depth0))
-    + ")</p>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"project-heading\">\r\n          <div>\r\n            <div class=\"project-title\">Product Information</div>\r\n          </div>\r\n        </div>\r\n        <div class=\"project-body\">\r\n          <div class=\"w-row\">\r\n            <div class=\"project-col w-col w-col-6\">\r\n              <div class=\"project-col-heading\">\r\n                <div class=\"project-col-title\">Plan For Independent Blockchain?</div>\r\n              </div>\r\n              <div class=\"project-col-body\">\r\n                <p id=\"project-product1\">"
+    + " NEO maximum cap for the pre-sale</p>\r\n              </div>\r\n            </div>\r\n            <div class=\"project-col w-col w-col-6\">\r\n              <div class=\"project-col-heading\">\r\n                <div class=\"project-col-title\">Token Issuance</div>\r\n              </div>\r\n              <div class=\"sub-text-false\">\r\n                <p id=\"project-issueinfo\">Information not yet available</p>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"project-heading\">\r\n          <div>\r\n            <div class=\"project-title\">Token Sale Information</div>\r\n          </div>\r\n        </div>\r\n        <div class=\"project-body\">\r\n          <div class=\"w-row\">\r\n"
+    + ((stack1 = (helpers.equal || (depth0 && depth0.equal) || alias4).call(alias3,(depth0 != null ? depth0.presalehas : depth0),"yes",{"name":"equal","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = (helpers.equal || (depth0 && depth0.equal) || alias4).call(alias3,(depth0 != null ? depth0.crowdsalehas : depth0),"yes",{"name":"equal","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "          </div>\r\n        </div>\r\n        <div class=\"project-heading\">\r\n          <div>\r\n            <div class=\"project-title\">Product Information</div>\r\n          </div>\r\n        </div>\r\n        <div class=\"project-body\">\r\n          <div class=\"w-row\">\r\n            <div class=\"project-col w-col w-col-6\">\r\n              <div class=\"project-col-heading\">\r\n                <div class=\"project-col-title\">Plan For Independent Blockchain?</div>\r\n              </div>\r\n              <div class=\"project-col-body\">\r\n                <p id=\"project-product1\">"
     + alias2(alias1((depth0 != null ? depth0["product-info1-description"] : depth0), depth0))
     + "</p>\r\n              </div>\r\n            </div>\r\n            <div class=\"project-col w-col w-col-6\">\r\n              <div class=\"project-col-heading\">\r\n                <div class=\"project-col-title\">Key Partners &amp; Backers</div>\r\n              </div>\r\n              <div class=\"project-col-body\">\r\n                <p id=\"project-product2\">"
     + alias2(alias1((depth0 != null ? depth0["product-info2-description"] : depth0), depth0))

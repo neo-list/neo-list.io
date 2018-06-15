@@ -118,6 +118,7 @@
         </div>
         <div class="project-body">
           <div class="w-row">
+            {{#equal this.presalehas "yes"}}
             <div class="project-col w-col w-col-6">
               <div class="project-col-heading">
                 <div class="project-col-title">Pre-Sale</div>
@@ -131,6 +132,8 @@
                 <p id="project-presale-offeredsupply"><span class="pre">Offered Supply:</span> {{presaleoffered-supply}} ({{this.presaleoffered-supply-percent}})</p>
               </div>
             </div>
+            {{/equal}}
+            {{#equal this.crowdsalehas "yes"}}
             <div class="project-col w-col w-col-6">
               <div class="project-col-heading">
                 <div class="project-col-title">Crowd-Sale</div>
@@ -144,6 +147,7 @@
                 <p id="project-crowdsale-offeredsupply"><span class="pre">Offered Supply:</span> {{this.crowdsaleoffered-supply}} ({{this.crowdsaleoffered-supply-percent}})</p>
               </div>
             </div>
+            {{/equal}}
           </div>
         </div>
         <div class="project-heading">
