@@ -16,13 +16,14 @@ Handlebars.registerHelper('trim', function(text) {
 });
 
 Handlebars.registerHelper('rating', function(text) {
-  if (text === "0"){
+  console.log(text);
+  if (text === 0){
   	return new Handlebars.SafeString('rating-green');
   }
-  else if (text === "1"){
+  else if (text === 1){
   	return new Handlebars.SafeString('rating-yellow');
   }
-  else if (text === "2"){
+  else if (text === 2){
   	return new Handlebars.SafeString('rating-red');
   }
   else{
