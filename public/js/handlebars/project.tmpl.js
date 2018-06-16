@@ -41,13 +41,17 @@ templates['project'] = template({"1":function(container,depth0,helpers,partials,
     + alias2(alias1((depth0 != null ? depth0["crowdsalehardcap-usd"] : depth0), depth0))
     + " / "
     + alias2(alias1((depth0 != null ? depth0["crowdsalehardcap-neo"] : depth0), depth0))
-    + "</p>\r\n                <p id=\"project-crowdsale-totalsupply\"><span class=\"pre\">Total Supply:</span> "
+    + "</p>\r\n                <p id=\"project-crowdsale-totalsupply\"><span class=\"pre\">Total Supply:</span>"
     + alias2(alias1((depth0 != null ? depth0["crowdsaletotal-supply"] : depth0), depth0))
+    + " "
+    + alias2(alias1((depth0 != null ? depth0.ticker : depth0), depth0))
     + "</p>\r\n                <p id=\"project-crowdsale-offeredsupply\"><span class=\"pre\">Offered Supply:</span> "
     + alias2(alias1((depth0 != null ? depth0["crowdsaleoffered-supply"] : depth0), depth0))
     + " ("
     + alias2(alias1((depth0 != null ? depth0["crowdsaleoffered-supply-percent"] : depth0), depth0))
-    + ")</p>\r\n              </div>\r\n            </div>\r\n";
+    + ") "
+    + alias2(alias1((depth0 != null ? depth0.ticker : depth0), depth0))
+    + "</p>\r\n              </div>\r\n            </div>\r\n";
 },"5":function(container,depth0,helpers,partials,data) {
     return "";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
