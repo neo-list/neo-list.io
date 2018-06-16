@@ -29,3 +29,18 @@ Handlebars.registerHelper('rating', function(text) {
   	return new Handlebars.SafeString('rating-none');
   }
 });
+
+Handlebars.registerHelper('ratingDesc', function(text) {
+  if (text === "0"){
+  	return new Handlebars.SafeString('All Clear');
+  }
+  else if (text === "1"){
+  	return new Handlebars.SafeString('Stay Alert');
+  }
+  else if (text === "2"){
+  	return new Handlebars.SafeString('Red Flag');
+  }
+  else{
+  	return new Handlebars.SafeString('Not Rated');
+  }
+});

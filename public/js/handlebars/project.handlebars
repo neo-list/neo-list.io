@@ -19,8 +19,8 @@
       <div class="body-container w-container">
         <div class="project-top w-clearfix">
           <div id="project-status" class="project-stage">{{this.status}}</div>
-          <div id="project-rating" class="rating-green"></div>
-          <div id="project-ratingtext" class="project-status">All Clear</div>
+          <div id="project-rating" class="{{#rating this.rating}}{{/rating}}"></div>
+          <div id="project-ratingtext" class="project-status">{{#ratingDesc this.guidelines-info1-status}}{{/ratingDesc}}</div>
         </div>
         <div class="project-body">
           <div class="project-c w-clearfix">
